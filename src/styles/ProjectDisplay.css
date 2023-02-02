@@ -1,0 +1,48 @@
+.project {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project h1 {
+  margin-top: 50px;
+  color: #fff900;
+  font-size: 35px;
+}
+.project img {
+  width: 700px;
+  border-radius: 10px;
+}
+
+.project b {
+  color: #fff900;
+}
+
+.project p {
+  font-size: 40px;
+  color: white;
+}
+
+.project svg {
+  font-size: 60px;
+  color: #3e497a;
+}
+
+@media only screen and (max-width: 1500px) {
+  .project img {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project img {
+    width: 300px;
+  }
+  .project p {
+    font-size: 25px;
+    color: white;
+  }
+}
