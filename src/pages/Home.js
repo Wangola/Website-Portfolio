@@ -3,6 +3,7 @@ import { BsGithub as GithubIcon } from "react-icons/bs";
 import { BsLinkedin as LinkedInIcon } from "react-icons/bs";
 import { HiMail as EmailIcon } from "react-icons/hi";
 import "../styles/Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -11,18 +12,26 @@ function Home() {
         <h2> Hi, my name is William </h2>
         <div className="prompt">
           <p> A software engineer with a passion for learning and creating</p>
-          <a href="https://github.com/Wangola" target="_blank" rel="noreferrer">
-            <GithubIcon />
-          </a>
 
-          <EmailIcon />
-          <a
-            href="https://www.linkedin.com/in/wangola/"
+          <Link
+            to={"https://github.com/Wangola"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GithubIcon />
+          </Link>
+
+          <Link to={"/contact"}>
+            <EmailIcon />
+          </Link>
+
+          <Link
+            to={"https://www.linkedin.com/in/wangola/"}
             target="_blank"
             rel="noreferrer"
           >
             <LinkedInIcon />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="skills">
