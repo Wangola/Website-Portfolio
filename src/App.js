@@ -9,6 +9,7 @@ import ProjectDisplay from "./pages/ProjectDisplay";
 import Contact from "./pages/Contact";
 
 // TODO: https://trello.com/b/BlMTXtMS/website-portfolio
+// Command to start web: npm start
 
 function App() {
   return (

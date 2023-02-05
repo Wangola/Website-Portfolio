@@ -7,7 +7,7 @@
 
 .about {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(80vh - 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,32 +49,237 @@
   color: #fff900;
 }
 
-.skills .list {
-  list-style: none;
-  width: 60%;
+/* Handles skill box placement */
+.skills-container {
+  width: 70%;
+  display: flex;
+  /* Centers container horizontally */
+  margin: 0 auto;
 }
 
-.list span {
-  font-size: 20px;
-  color: white;
+.skill-box {
+  /* background-color: red; */
+  width: 30%;
+  /* Padding for everything except top (T || R || B || L)*/
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  margin: 0 1.5%;
+
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+/* Color wheel base #FF7900 using Tetradic combo */
+.skills-container .front {
+  color: #07ff00;
+  padding-bottom: 10px;
+  font-size: 20pt;
+  font-weight: 800;
+}
+.front hr {
+  width: 100%;
+  margin-top: 6%;
+  border: 1.4px solid #07ff00;
+}
+
+.skills-container .back {
+  color: #0086ff;
+  padding-bottom: 10px;
+  font-size: 20pt;
+  font-weight: 800;
+}
+.back hr {
+  width: 100%;
+  margin-top: 6%;
+  border: 1.4px solid #0086ff;
+}
+
+.skills-container .lang {
+  color: #f900ff;
+  padding-bottom: 10px;
+  font-size: 20pt;
+  font-weight: 800;
+}
+.lang hr {
+  width: 100%;
+  margin-top: 6%;
+  border: 1.4px solid #f900ff;
+}
+/* Color wheel base #FF7900 using Tetradic combo */
+
+.icon-spacing {
+  /* Padding for everything except top (T || R || B || L)*/
+  padding: 10px 10px 0 10px;
+  height: 70px;
+}
+
+.icon-java {
+  height: 80px;
+}
+
+/* Handles skill box placement */
+
+@media only screen and (max-width: 2561px) {
+  .about {
+    height: calc(80vh - 80px);
+  }
+
+  .about h2 {
+    font-size: 130px;
+  }
+
+  .about .prompt {
+    font-size: 42px;
+    width: 80%;
+  }
+  .prompt svg {
+    font-size: 100px;
+  }
+
+  .skills {
+    font-size: 50px;
+  }
+
+  .skills-container .front {
+    font-size: 45pt;
+  }
+
+  .skills-container .back {
+    font-size: 45pt;
+  }
+
+  .skills-container .lang {
+    font-size: 45pt;
+  }
+
+  .icon-spacing {
+    /* Padding for everything except top (T || R || B || L)*/
+    padding: 20px 20px 0 20px;
+    height: 110px;
+  }
+  .icon-java {
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  .about h2 {
+    font-size: 100px;
+  }
+
+  .about .prompt {
+    font-size: 30px;
+    width: 70%;
+  }
+
+  .icon-spacing {
+    /* Padding for everything except top (T || R || B || L)*/
+    padding: 10px 10px 0 10px;
+    height: 70px;
+  }
+  .icon-java {
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .about {
+    height: calc(70vh - 70px);
+  }
+  .about h2 {
+    font-size: 80px;
+  }
+
+  .about .prompt {
+    font-size: 25px;
+    width: 60%;
+  }
+  .prompt svg {
+    font-size: 60px;
+  }
+  .skills {
+    font-size: 30px;
+  }
+
+  .skills-container .front {
+    font-size: 20pt;
+  }
+
+  .skills-container .back {
+    font-size: 20pt;
+  }
+
+  .skills-container .lang {
+    font-size: 20pt;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .about h2 {
+    font-size: 70px;
+  }
+
+  .about .prompt {
+    font-size: 20px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .about h2 {
+    font-size: 60px;
+  }
+
+  .about .prompt {
+    font-size: 18px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about h2 {
+    font-size: 50px;
+  }
+
+  .about .prompt {
+    font-size: 18px;
+    width: 60%;
+  }
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-box {
+    width: 100%;
+    margin-top: 5%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .about {
+    height: calc(70vh - 70px);
+  }
+
   .about h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .about .prompt {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     width: 80%;
   }
 
-  .skills {
-    text-align: center;
+  .prompt svg {
+    font-size: 45px;
   }
-  .list {
-    padding: 0;
+
+  .skills {
+    font-size: 25px;
+    text-align: center;
   }
 
   .skills h2 {

@@ -1,0 +1,421 @@
+.container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.container h1 {
+  color: #fff900;
+  float: left;
+  font-size: 55px;
+}
+
+/* Left panel format   */
+.left-panel {
+  width: 45%;
+  height: 60vh;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-panel p {
+  color: white;
+  font-size: large;
+  font-weight: 300;
+  font-size: 16pt;
+  font-style: italic;
+}
+.left-panel p {
+  color: white;
+  font-size: large;
+  font-weight: 300;
+  font-size: 16pt;
+  font-style: italic;
+}
+
+/* Left panel format   */
+
+/* Right panel format */
+.right-panel {
+  width: 55%;
+  height: auto;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-block {
+  border-radius: 15px;
+  width: 90%;
+  height: auto;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-left: 5px;
+  margin-top: 5%;
+
+  /* Display format */
+  display: flex;
+  justify-content: "center";
+  align-items: "center";
+  flex-direction: column;
+  /* Hides overflow from greater widths */
+  overflow: hidden;
+}
+
+.contact-block label {
+  color: white;
+  display: block;
+  font-weight: 700;
+  font-size: 14pt;
+  margin-left: 6.5%;
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+.contact-block input {
+  width: 85%;
+  margin-left: 6.5%;
+  display: block;
+  border: hidden;
+  padding: 1%;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.15);
+}
+
+.contact-block textarea {
+  width: 85%;
+  margin-left: 6.5%;
+  border: hidden;
+  padding: 1%;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.15);
+
+  /* Force resizing and height */
+  resize: vertical;
+  max-height: 150px;
+}
+
+/* Separater div for button to customize  */
+.button {
+  margin-top: 5%;
+}
+
+.button input {
+  width: 90%;
+  margin-left: 5.2%;
+  display: block;
+
+  border: hidden;
+  padding: 1.5%;
+  border-radius: 10px;
+
+  background-color: #0086ff;
+  font-size: 12pt;
+  color: #fff900;
+}
+
+.contact-block hr {
+  width: 92%;
+  margin-top: 6%;
+  border: 1.4px solid #0086ff;
+}
+
+.contact-block h1 {
+  color: #fff900;
+  float: left;
+  font-size: 20pt;
+  margin-left: 6.5%;
+}
+
+.contact-block p {
+  color: white;
+  font-size: 11pt;
+  font-weight: 300;
+  margin-left: 3%;
+}
+/* Right panel format */
+
+/* Responsive action */
+/* left-panel final (h1 55pt) & (p 16pt) 1440 */
+/* control-block final (h1 20pt) & (p 11pt)  */
+
+@media only screen and (max-width: 2560px) {
+  .left-panel {
+    width: 45%;
+    transform: translateY(5%);
+  }
+  .container h1 {
+    font-size: 75pt;
+  }
+  .left-panel p {
+    font-size: 25pt;
+  }
+  .right-panel {
+    width: 55%;
+  }
+  .contact-block h1 {
+    font-size: 30pt;
+  }
+  .contact-block label {
+    font-size: 28pt;
+  }
+  .contact-block p {
+    font-size: 22pt;
+  }
+  .contact-block input {
+    padding: 1%;
+    font-size: 18pt;
+  }
+  .contact-block textarea {
+    font-size: 18pt;
+  }
+  .button input {
+    font-size: 18pt;
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  .left-panel {
+    width: 50%;
+    transform: translateY(5%);
+  }
+  .container h1 {
+    font-size: 50pt;
+  }
+  .left-panel p {
+    font-size: 16pt;
+  }
+  .right-panel {
+    width: 50%;
+  }
+  .contact-block label {
+    font-size: 18pt;
+  }
+  .contact-block input {
+    padding: 1%;
+    font-size: 14pt;
+  }
+  .contact-block textarea {
+    font-size: 14pt;
+  }
+  .contact-block h1 {
+    font-size: 20pt;
+  }
+  .contact-block p {
+    font-size: 14pt;
+  }
+  .button input {
+    font-size: 18pt;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .left-panel {
+    width: 45%;
+    transform: translateY(5%);
+  }
+  .container h1 {
+    font-size: 55pt;
+  }
+  .left-panel p {
+    font-size: 16pt;
+  }
+  .right-panel {
+    width: 55%;
+  }
+  .contact-block label {
+    font-size: 18pt;
+  }
+  .contact-block input {
+    padding: 1%;
+    font-size: 14pt;
+  }
+  .contact-block textarea {
+    font-size: 14pt;
+  }
+  .contact-block h1 {
+    font-size: 20pt;
+  }
+  .contact-block p {
+    font-size: 14pt;
+  }
+  .button input {
+    font-size: 14pt;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .left-panel {
+    width: 45%;
+    transform: translateY(5%);
+  }
+  .container h1 {
+    font-size: 50pt;
+  }
+  .left-panel p {
+    font-size: 14pt;
+  }
+  .right-panel {
+    width: 55%;
+  }
+  .contact-block label {
+    font-size: 18pt;
+  }
+  .contact-block input {
+    padding: 1%;
+    font-size: 14pt;
+  }
+  .contact-block textarea {
+    font-size: 14pt;
+  }
+  .contact-block h1 {
+    font-size: 20pt;
+  }
+  .contact-block p {
+    font-size: 14pt;
+  }
+  .button input {
+    font-size: 14pt;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .left-panel {
+    width: 45%;
+    transform: translateY(3%);
+  }
+  .container h1 {
+    font-size: 47pt;
+  }
+  .left-panel p {
+    font-size: 13pt;
+  }
+  .right-panel {
+    width: 55%;
+  }
+  .contact-block label {
+    font-size: 18pt;
+  }
+  .contact-block input {
+    padding: 1%;
+    font-size: 14pt;
+  }
+  .contact-block textarea {
+    font-size: 14pt;
+  }
+  .contact-block h1 {
+    font-size: 20pt;
+  }
+  .contact-block p {
+    font-size: 14pt;
+  }
+  .button input {
+    font-size: 14pt;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .left-panel {
+    width: 45%;
+    transform: translateY(3%);
+  }
+  .container h1 {
+    font-size: 35pt;
+  }
+  .left-panel p {
+    font-size: 10pt;
+  }
+  .contact-block label {
+    font-size: 16pt;
+  }
+  .contact-block input {
+    padding: 1%;
+    font-size: 12pt;
+  }
+  .contact-block textarea {
+    font-size: 12pt;
+  }
+  .contact-block h1 {
+    font-size: 18pt;
+  }
+  .contact-block p {
+    font-size: 12pt;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container h1 {
+    font-size: 34pt;
+  }
+  .left-panel p {
+    font-size: 10pt;
+  }
+  .contact-block h1 {
+    font-size: 16pt;
+  }
+  .contact-block p {
+    font-size: 9pt;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left-panel {
+    width: 100%;
+    height: 20vh;
+  }
+  .container h1 {
+    font-size: 45pt;
+  }
+  .left-panel p {
+    font-size: 14pt;
+  }
+  .right-panel {
+    width: 100%;
+  }
+  .contact-block h1 {
+    font-size: 18pt;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container h1 {
+    font-size: 40pt;
+  }
+  .left-panel p {
+    font-size: 12pt;
+  }
+  .contact-block h1 {
+    font-size: 18pt;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container h1 {
+    font-size: 35pt;
+  }
+  .left-panel p {
+    font-size: 10pt;
+  }
+  .contact-block h1 {
+    font-size: 16pt;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .container h1 {
+    font-size: 32pt;
+  }
+  .left-panel p {
+    font-size: 9pt;
+  }
+  .contact-block h1 {
+    font-size: 14pt;
+  }
+}
+/* Responsive action */
