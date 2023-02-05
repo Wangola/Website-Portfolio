@@ -1,6 +1,5 @@
 import React from "react";
 import { BsGithub as GithubIcon } from "react-icons/bs";
-import { BsLinkedin as LinkedInIcon } from "react-icons/bs";
 import { HiMail as EmailIcon } from "react-icons/hi";
 import { Typewriter } from "react-simple-typewriter";
 
