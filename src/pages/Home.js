@@ -53,7 +53,7 @@ function Home() {
           </p>
 
           <Link
-            to={"https://github.com/Wangola"}
+            to={"https://github.com/Wangola/Website-Portfolio"}
             target="_blank"
             rel="noreferrer"
           >
@@ -62,14 +62,6 @@ function Home() {
 
           <Link to={"/contact"}>
             <EmailIcon />
-          </Link>
-
-          <Link
-            to={"https://www.linkedin.com/in/wangola/"}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <LinkedInIcon />
           </Link>
         </div>
       </div>
