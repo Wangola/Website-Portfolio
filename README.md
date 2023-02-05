@@ -1,6 +1,6 @@
 # Website-Portfolio
 
-![Home view](Pictures/Electric%20circuit.png)
+![Home view](Pictures/Front%20page.png)
 
 
 *Website-Portfolio Description -*
