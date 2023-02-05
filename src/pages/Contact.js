@@ -9,6 +9,7 @@ function Contact() {
 
   // Holds temp value for input button
   const [value, setValue] = useState("Send Message");
+  const [nameState, setNameState] = useState("");
 
   // Handles message response and resets button
   const handleReset = () => {
@@ -55,7 +56,12 @@ function Contact() {
           <form ref={form} onSubmit={sendEmail}>
             <div>
               <label>Name</label>
-              <input type="text" name="name" placeholder=" Full Name" />
+              <input
+                type="text"
+                name="name"
+                placeholder=" Full Name"
+                onChange={(e) => setNameState(e.target.value)}
+              />
             </div>
 
             <div>
@@ -71,6 +77,10 @@ function Contact() {
                 type="submit"
                 value={value}
                 onClick={handleReset}
+                disabled={!nameState}
+                style={{
+                  backgroundColor: nameState ? "#0086ff" : "gray",
+                }}
               />
             </div>
 

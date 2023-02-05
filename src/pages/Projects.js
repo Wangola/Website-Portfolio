@@ -11,7 +11,8 @@ function Projects() {
         {ProjectList.map((project, index) => {
           return (
             <ProjectItem
-              key={project.id}
+              // Applying inedx to key will make each unique
+              key={project.id + "-" + index}
               id={index}
               name={project.name}
               image={project.image}

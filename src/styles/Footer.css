@@ -11,16 +11,29 @@
 .socialMedia svg {
   color: white;
   margin: 20px;
-  font-size: 60px;
+  font-size: 90px;
   cursor: pointer;
 }
 
 .footer p {
   color: white;
+  font-size: 20pt;
+}
+
+@media only screen and (max-width: 1800px) {
+  .footer svg {
+    font-size: 60px;
+  }
+  .footer p {
+    font-size: 12pt;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .footer svg {
     font-size: 50px;
+  }
+  .footer p {
+    font-size: 10pt;
   }
 }

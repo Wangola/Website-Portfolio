@@ -10,7 +10,7 @@
 .project h1 {
   margin-top: 50px;
   color: #fff900;
-  font-size: 35px;
+  font-size: 30pt;
 }
 .project img {
   width: 700px;
@@ -20,15 +20,91 @@
 .project b {
   color: #fff900;
 }
+.project span {
+  padding: 1% 0 1% 0;
+  color: white;
+  font-size: 22pt;
+  font-style: italic;
+}
+
+.descript-block {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .project p {
-  font-size: 40px;
+  width: 80%;
+  font-size: 15pt;
   color: white;
+}
+
+.project a {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-bottom: 20px;
 }
 
 .project svg {
   font-size: 60px;
-  color: #3e497a;
+  color: #0086ff;
+}
+
+@media only screen and (max-width: 2561px) {
+  .project img {
+    width: 800px;
+  }
+  .project h1 {
+    font-size: 40pt;
+  }
+
+  .project span {
+    font-size: 30pt;
+  }
+
+  .descript-block {
+    width: 70%;
+  }
+
+  .project p {
+    width: 50%;
+    font-size: 25pt;
+  }
+
+  .project svg {
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  .project img {
+    width: 600px;
+  }
+
+  .project svg {
+    font-size: 60px;
+    color: #0086ff;
+  }
+
+  .project h1 {
+    font-size: 35pt;
+  }
+  .project span {
+    font-size: 20pt;
+  }
+
+  .descript-block {
+    width: 70%;
+  }
+
+  .project p {
+    width: 50%;
+    font-size: 16pt;
+  }
 }
 
 @media only screen and (max-width: 1500px) {
@@ -37,12 +113,43 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1000px) {
+  .project h1 {
+    font-size: 25pt;
+  }
+  .project img {
+    width: 400px;
+  }
+
+  .project span {
+    font-size: 18pt;
+  }
+
+  .descript-block {
+    width: 70%;
+  }
+
+  .project p {
+    width: 80%;
+    font-size: 13pt;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .project img {
     width: 300px;
   }
+  .project span {
+    font-size: 16pt;
+  }
+  .descript-block {
+    width: 80%;
+  }
   .project p {
-    font-size: 25px;
-    color: white;
+    width: 100%;
+    font-size: 12pt;
+  }
+  .project a {
+    width: 100%;
   }
 }

@@ -16,12 +16,19 @@ function ProjectDisplay() {
       ) : (
         <img alt="" src={project.gif}></img>
       )}
-      <p>
+      <span>
         <b>Skills: </b> {project.skills}
-      </p>
-      <a href={project.github} target="_blank" rel="noreferrer">
-        <GithubIcon />
-      </a>
+      </span>
+
+      <div className="descript-block">
+        <p>
+          {" "}
+          <b>Description: </b> {project.description}
+        </p>
+        <a href={project.github} target="_blank" rel="noreferrer">
+          <GithubIcon />
+        </a>
+      </div>
     </div>
   );
 }

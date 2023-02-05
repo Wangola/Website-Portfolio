@@ -2,6 +2,7 @@ import React from "react";
 import { BsGithub as GithubIcon } from "react-icons/bs";
 import { BsLinkedin as LinkedInIcon } from "react-icons/bs";
 import { HiMail as EmailIcon } from "react-icons/hi";
+import { Typewriter } from "react-simple-typewriter";
 
 // Skill icons (icons commented out in case Devicon svg's are taken [could update all to be individual svg's "worldvectorlogo"])
 // import { IoLogoReact as ReactIcon } from "react-icons/io5";
@@ -31,21 +32,22 @@ function Home() {
         <div className="prompt">
           <p>
             Software engineer{" "}
-            {/* Reference https://www.youtube.com/watch?v=t7ePHIsKnnI&t=41s */}
-            {/* <Typical
-              loop={Infinity}
-              wrapper="b"
-              steps={[
-                "who seeks impact through new challenges 🚀",
-                3000,
-                "and life-long programmer 🧑🏽‍💻",
-                3000,
-                "with a passion for gaming 🎮 ",
-                3000,
-                "and Java enthusiast 🤩",
-                3000,
-              ]}
-            /> */}
+            {/* Reference https://www.youtube.com/watch?v=t7ePHIsKnnI&t=41s , https://www.npmjs.com/package/react-simple-typewriter*/}
+            <span style={{ color: "white", fontWeight: "bold" }}>
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                words={[
+                  "who seeks impact through new challenges 🚀",
+                  "and life-long programmer 🧑🏽‍💻",
+                  "with a passion for gaming 🎮",
+                  "and is a Java enthusiast 🤩",
+                ]}
+                loop={Infinity}
+                typeSpeed={50}
+                deleteSpeed={40}
+                delaySpeed={3000}
+              />
+            </span>
             {/* A software engineer seeking new challenges to make a positive
             impact. */}
           </p>
@@ -79,9 +81,7 @@ function Home() {
       {/* Handles item placement of skills */}
       <div className="skills-container">
         <div className="skill-box">
-          <h2 className="front">
-            Front end <hr></hr>
-          </h2>
+          <h2 className="front">Front end</h2>
 
           <img
             className="icon-spacing"
@@ -105,9 +105,7 @@ function Home() {
         </div>
 
         <div className="skill-box">
-          <h2 className="back">
-            Back end <hr></hr>
-          </h2>
+          <h2 className="back">Back end</h2>
 
           <img
             className="icon-java"
@@ -135,9 +133,7 @@ function Home() {
         </div>
 
         <div className="skill-box">
-          <h2 className="lang">
-            Languages <hr></hr>
-          </h2>
+          <h2 className="lang">Languages</h2>
 
           <img
             className="icon-java"

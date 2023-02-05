@@ -23,6 +23,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  margin: 0 auto;
 }
 
 /* MENU ITEM STYLING */
@@ -38,6 +39,7 @@
 
 .projectItem h1 {
   color: white;
+  font-size: 23px;
 }
 
 .projectItem:hover {
@@ -56,28 +58,113 @@
   background-size: cover;
 }
 
-.projectItem h1 {
-  font-size: 23px;
+@media only screen and (max-width: 2561px) {
+  .projectItem {
+    width: 600px;
+    height: 450px;
+  }
+  .projectItem .bgImage {
+    height: 300px;
+  }
+
+  .projects h1 {
+    font-size: 40pt;
+  }
+
+  .projectItem h1 {
+    font-size: 26pt;
+  }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 2250px) {
+  .projectItem {
+    width: 450px;
+    height: 400px;
+  }
+  .projectItem .bgImage {
+    height: 300px;
+  }
+
+  .projects h1 {
+    font-size: 36pt;
+  }
+
+  .projectItem h1 {
+    font-size: 22pt;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
   .projectList {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1320px) {
   .projectList {
-    grid-template-columns: 1fr;
+    width: 82%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projectItem {
+    width: 350px;
+    height: 400px;
+  }
+  .projectItem .bgImage {
+    height: 300px;
+  }
+
+  .projects h1 {
+    font-size: 32pt;
+  }
+  .projectItem h1 {
+    font-size: 18pt;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
+  .projectList {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .projectItem {
+    width: 400px;
+    height: 350px;
+  }
+  .projectItem .bgImage {
+    height: 250px;
+  }
+  .projectItem h1 {
+    font-size: 19pt;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .projectList {
     width: 100%;
   }
+  .projects h1 {
+    font-size: 22pt;
+  }
+
   .projectItem {
     width: 300px;
-    height: 300px;
+    height: 250px;
+  }
+  .projectItem .bgImage {
+    height: 200px;
+  }
+  .projectItem h1 {
+    font-size: 13pt;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .projectItem {
+    width: 250px;
+    height: 250px;
+  }
+  .projectItem .bgImage {
+    height: 200px;
   }
 }
