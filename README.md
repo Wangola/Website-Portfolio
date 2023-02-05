@@ -11,12 +11,18 @@ My portfolio showcases my entry-level React skills and technical abilities, incl
 
 * William Angola
 
+## Website
+
+[Wangola Portfolio](https://wangola.netlify.app/)
+
 ## Built with
 
 * IDE used:
   * Visual Studio Code
 * Front end:
   * React, HTML, CSS
+* Packages used:
+  * react-icons, emailjs-com, react-router-dom, react-simple-typewriter
 * Service used:
   * Netlify
 * Resources used:
