@@ -11,13 +11,13 @@
 .socialMedia svg {
   color: white;
   margin: 20px;
-  font-size: 90px;
+  font-size: 75px;
   cursor: pointer;
 }
 
 .footer p {
   color: white;
-  font-size: 20pt;
+  font-size: 16pt;
 }
 
 @media only screen and (max-width: 1800px) {

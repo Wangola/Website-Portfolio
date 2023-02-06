@@ -60,7 +60,7 @@
 
 @media only screen and (max-width: 2561px) {
   .projectItem {
-    width: 600px;
+    width: 450px;
     height: 450px;
   }
   .projectItem .bgImage {
@@ -68,7 +68,7 @@
   }
 
   .projects h1 {
-    font-size: 40pt;
+    font-size: 32pt;
   }
 
   .projectItem h1 {

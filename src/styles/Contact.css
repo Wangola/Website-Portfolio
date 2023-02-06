@@ -147,26 +147,26 @@
 
 @media only screen and (max-width: 2560px) {
   .left-panel {
-    width: 45%;
+    width: 50%;
     transform: translateY(5%);
   }
   .container h1 {
-    font-size: 75pt;
+    font-size: 70pt;
   }
   .left-panel p {
-    font-size: 25pt;
+    font-size: 22pt;
   }
   .right-panel {
-    width: 55%;
+    width: 50%;
   }
   .contact-block h1 {
-    font-size: 30pt;
-  }
-  .contact-block label {
     font-size: 28pt;
   }
+  .contact-block label {
+    font-size: 26pt;
+  }
   .contact-block p {
-    font-size: 22pt;
+    font-size: 20.5pt;
   }
   .contact-block input {
     padding: 1%;
