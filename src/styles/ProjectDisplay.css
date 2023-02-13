@@ -41,12 +41,11 @@
 }
 
 .project a {
-  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   float: right;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .project svg {

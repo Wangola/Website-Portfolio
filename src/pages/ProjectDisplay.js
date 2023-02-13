@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { ProjectList } from "../helpers/ProjectList";
 import { BsGithub as GithubIcon } from "react-icons/bs";
+import { RiPagesLine } from "react-icons/ri";
 import "../styles/ProjectDisplay.css";
 
 function ProjectDisplay() {
@@ -22,12 +23,20 @@ function ProjectDisplay() {
 
       <div className="descript-block">
         <p>
-          {" "}
           <b>Description: </b> {project.description}
         </p>
         <a href={project.github} target="_blank" rel="noreferrer">
           <GithubIcon />
         </a>
+        {/* Check if projectList has live link */}
+        {project.live === "" ? (
+          // Nothing
+          <a> </a>
+        ) : (
+          <a href={project.live} target="_blank" rel="noreferrer">
+            <RiPagesLine />
+          </a>
+        )}
       </div>
     </div>
   );
