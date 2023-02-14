@@ -31,7 +31,7 @@ function ProjectDisplay() {
         {/* Check if projectList has live link */}
         {project.live === "" ? (
           // Nothing
-          <a> </a>
+          <></>
         ) : (
           <a href={project.live} target="_blank" rel="noreferrer">
             <RiPagesLine />
