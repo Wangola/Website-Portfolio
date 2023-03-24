@@ -25,9 +25,15 @@ function ProjectDisplay() {
         <p>
           <b>Description: </b> {project.description}
         </p>
-        <a href={project.github} target="_blank" rel="noreferrer">
-          <GithubIcon />
-        </a>
+
+        {project.github === "" ? (
+          // Nothing
+          <></>
+        ) : (
+          <a href={project.github} target="_blank" rel="noreferrer">
+            <GithubIcon />
+          </a>
+        )}
         {/* Check if projectList has live link */}
         {project.live === "" ? (
           // Nothing

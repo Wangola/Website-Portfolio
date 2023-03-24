@@ -4,6 +4,7 @@ import Boomi from "../assets/Boomi.png";
 import ProductionGif from "../assets/Production Project Final.gif";
 import Production from "../assets/Production.png";
 import Twitch from "../assets/Twitch.png";
+import Portal from "../assets/Portal.png";
 
 export const ProjectList = [
   {
@@ -15,6 +16,18 @@ export const ProjectList = [
     live: "",
     description:
       "The Brain Age app is designed to boost users' cognitive skills through enjoyable mini-games and competitive leaderboards. This is version 1 of the app, with future updates planned.",
+  },
+  {
+    name: "Three.js Portal",
+    image: Portal,
+    gif: "",
+    skills: "Javascript, Three.js, Vite, Blender",
+    github: "",
+    live: "https://three-js-portal-wangola.vercel.app/",
+    description: `
+      Three.js Portal was created with the expert guidance of Bruno Simon's Three.js course. Using Blender, all assets were designed and colors were baked in for maximum impact. Three.js handles the loading of the assets, and custom shaders enhance the immersive experience, including fireflies and portal colors. 
+      Please note that changes to the portal colors will not affect the scene (For best performance use Chrome).
+      `,
   },
   {
     name: "Twitch Clone",
